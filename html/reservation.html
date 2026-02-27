@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations - Flavors Restaurant</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=100&h=100&fit=crop"
+          alt="Restaurant Logo"
+          class="logo-img"
+        />
+        <h2>Flavors<span>Restaurant</span></h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/html/index.html" class="active">Home</a></li>
+        <li><a href="/html/menu.html">Menu</a></li>
+        <li><a href="/html/about.html">About</a></li>
+        <li><a href="/html/reservation.html">Reservations</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+        <!-- Cart icon will be added automatically by JavaScript -->
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <section class="page-header">
+      <h1>Book Your Table</h1>
+    </section>
+
+    <section class="reservation-section">
+      <div class="reservation-container">
+        <div class="gallery-grid" id="gallery">
+          <!-- Gallery images will load from API -->
+        </div>
+        <form class="reservation-form" id="reservationForm">
+          <h3>Make a Reservation</h3>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <input type="time" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Number of Guests</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3">3 People</option>
+              <option value="4">4 People</option>
+              <option value="5">5+ People</option>
+            </select>
+          </div>
+          <button type="submit" class="btn primary-btn">Book Now</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

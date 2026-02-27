@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu - Flavors Restaurant</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=100&h=100&fit=crop"
+          alt="Restaurant Logo"
+          class="logo-img"
+        />
+        <h2>Flavors<span>Restaurant</span></h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/html/index.html" class="active">Home</a></li>
+        <li><a href="/html/menu.html">Menu</a></li>
+        <li><a href="/html/about.html">About</a></li>
+        <li><a href="/html/reservation.html">Reservations</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+        <!-- Cart icon will be added automatically by JavaScript -->
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <section class="page-header">
+      <h1>Our Menu</h1>
+      <div class="menu-categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="appetizers">
+          Appetizers
+        </button>
+        <button class="category-btn" data-category="mains">Main Menu</button>
+        <button class="category-btn" data-category="desserts">Desserts</button>
+      </div>
+    </section>
+
+    <section class="menu-grid" id="menu-items">
+      <!-- Menu items will be loaded from API -->
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

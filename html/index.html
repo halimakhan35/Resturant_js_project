@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavors Restaurant - Home</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=100&h=100&fit=crop"
+          alt="Restaurant Logo"
+          class="logo-img"
+        />
+        <h2>Flavors<span>Restaurant</span></h2>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/html/index.html" class="active">Home</a></li>
+        <li><a href="/html/menu.html">Menu</a></li>
+        <li><a href="/html/about.html">About</a></li>
+        <li><a href="/html/reservation.html">Reservations</a></li>
+        <li><a href="/html/contact.html">Contact</a></li>
+        <!-- Cart icon will be added automatically by JavaScript -->
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Rotating Images -->
+    <section class="hero">
+      <div class="hero-slider">
+        <div
+          class="slide active"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80&quot;);
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80&quot;);
+          "
+        ></div>
+        <div
+          class="slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80&quot;);
+          "
+        ></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="rotate-text">Welcome to Flavors</h1>
+        <p>Experience the finest culinary delights in town</p>
+        <a href="/html/reservation.html" class="btn primary-btn"
+          >Book a Table</a
+        >
+      </div>
+    </section>
+
+    <!-- Featured Dishes with API Images -->
+    <section class="featured-dishes">
+      <h2 class="section-title">Today's Specials</h2>
+      <div class="dishes-container" id="featured-dishes">
+        <!-- API images will be loaded here -->
+      </div>
+    </section>
+
+    <!-- Chef's Recommendation -->
+    <section class="chef-recommendation">
+      <div class="chef-content">
+        <h2>Chef's Special</h2>
+        <div class="rotating-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                alt="Chef Special"
+              />
+              <h3>Signature Dish</h3>
+            </div>
+            <div class="card-back">
+              <h3>Grilled Salmon</h3>
+              <p>Fresh Atlantic salmon with herbs</p>
+              <span class="price">$28.99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
